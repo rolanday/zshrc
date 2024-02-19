@@ -13,7 +13,7 @@ esac
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$BUN_INSTALL/bin:$HOME/git/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
@@ -21,9 +21,11 @@ fi
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 # brew install g-ls to install g (ls replacement)
-alias ls="g"
+alias ls="eza"
 # brew install bat to install bat (cat replacement)
 alias cat="bat"
 # brew install ripgrep to install ripgrep (grep replacement)
 alias grep="rg"
 
+# vim
+alias vim="nvim"

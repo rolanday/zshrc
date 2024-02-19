@@ -1,4 +1,6 @@
 *
 !.gitignore
 !.zshrc
+!.tmux.conf
+!.tmux/**
 
