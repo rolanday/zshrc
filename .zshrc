@@ -1,6 +1,5 @@
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
-eval "$(oh-my-posh init zsh)"
-
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/catppuccin_mocha.omp.json)"
 # pnpm
 export PNPM_HOME="/Users/roland/Library/pnpm"
 case ":$PATH:" in
